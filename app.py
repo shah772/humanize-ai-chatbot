@@ -1,7 +1,10 @@
-import openai
 import streamlit as st
+st.set_page_config(page_title="Humanize AI Chatbot", page_icon="🤖")
+
+import openai
 import time
 import random
+
 
 [openai]
 api_key = "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"
