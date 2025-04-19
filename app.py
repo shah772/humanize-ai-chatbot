@@ -5,10 +5,7 @@ import openai
 import time
 import random
 
-
-[openai]
-api_key = "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"
-
+openai.api_key = st.secrets["api_key"]
 
 def type_like_human(text):
     output = ""
@@ -17,7 +14,6 @@ def type_like_human(text):
         time.sleep(random.uniform(0.01, 0.05))
     return output
 
-st.set_page_config(page_title="Humanize AI Chatbot", page_icon="🤖")
 st.title("🤖 Humanize AI Chatbot")
 st.write("Chat with an AI that sounds more like a real human 👨‍💻")
 
